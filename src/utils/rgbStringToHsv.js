@@ -9,6 +9,7 @@ const rgbStringToHsv = (string) => {
     r: Number(match[1]),
     g: Number(match[2]),
     b: Number(match[3]),
+    a: 1
   });
 };
 

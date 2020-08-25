@@ -6,6 +6,7 @@ const hexToRgb = (hex) => {
       r: parseInt(hex[0] + hex[0], 16),
       g: parseInt(hex[1] + hex[1], 16),
       b: parseInt(hex[2] + hex[2], 16),
+      a: 1
     };
   }
 
@@ -13,6 +14,7 @@ const hexToRgb = (hex) => {
     r: parseInt(hex.substr(0, 2), 16),
     g: parseInt(hex.substr(2, 2), 16),
     b: parseInt(hex.substr(4, 2), 16),
+    a: 1
   };
 };
 

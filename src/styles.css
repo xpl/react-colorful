@@ -11,7 +11,7 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 20px;
+  bottom: 40px;
   border-bottom: 10px solid #000;
   border-radius: 8px 8px 0 0;
 }
@@ -56,6 +56,15 @@
   );
 }
 
+.alpha {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: magenta;
+}
+
 .interactive {
   position: absolute;
   left: 0;
@@ -64,6 +73,21 @@
   height: 100%;
   /* Don't trigger the default scrolling behavior when the event is originating from this element */
   touch-action: none;
+}
+
+.alpha-interactive {
+  background: #eee url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" fill-opacity=".25" ><rect x="200" width="200" height="200" /><rect y="200" width="200" height="200" /></svg>');
+  background-size: 10px 10px;
+}
+
+.alpha-interactive:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to left, transparent 0%, black 100%);
 }
 
 .pointer {
@@ -76,4 +100,9 @@
   border: 2px solid #fff;
   border-radius: 50%;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.alpha-pointer {
+  width: 5px;
+  border-radius: 0;
 }

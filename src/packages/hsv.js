@@ -4,7 +4,7 @@ import ColorPicker from "../components/ColorPicker";
 import equal from "../utils/equalColorObjects";
 
 const HSV = {
-  defaultColor: { h: 0, s: 0, v: 0 },
+  defaultColor: { h: 0, s: 0, v: 0, a: 1 },
   toHsv: (hsv) => hsv,
   fromHsv: (hsv) => hsv,
   equal,

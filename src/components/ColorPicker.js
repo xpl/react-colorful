@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import Hue from "./Hue";
+import Alpha from "./Alpha";
 import Saturation from "./Saturation";
 import formatClassName from "../utils/formatClassName";
 import equalColorObjects from "../utils/equalColorObjects";
@@ -46,6 +47,7 @@ const ColorPicker = ({ className, colorModel, color = colorModel.defaultColor, o
     <div className={nodeClassName}>
       <Saturation hsv={hsv} onChange={handleChange} />
       <Hue hue={hsv.h} onChange={handleChange} />
+      <Alpha hsva={hsv} onChange={handleChange} />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-const rgbToHsv = ({ r, g, b }) => {
+const rgbToHsv = ({ r, g, b, a }) => {
   let max = Math.max(r, g, b);
   let delta = max - Math.min(r, g, b);
 
@@ -14,6 +14,7 @@ const rgbToHsv = ({ r, g, b }) => {
     h: Math.round(60 * (hh < 0 ? hh + 6 : hh)),
     s: Math.round(max ? (delta / max) * 100 : 0),
     v: Math.round((max / 255) * 100),
+    a
   };
 };
 

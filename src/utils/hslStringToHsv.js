@@ -9,6 +9,7 @@ const hslStringToHsv = (string) => {
     h: Number(match[1]),
     s: Number(match[2]),
     l: Number(match[3]),
+    a: 1
   });
 };
 

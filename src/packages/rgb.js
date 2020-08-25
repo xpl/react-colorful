@@ -6,7 +6,7 @@ import fromHsv from "../utils/hsvToRgb";
 import equal from "../utils/equalColorObjects";
 
 const RGB = {
-  defaultColor: { r: 0, g: 0, b: 0 },
+  defaultColor: { r: 0, g: 0, b: 0, a: 1 },
   toHsv,
   fromHsv,
   equal,
